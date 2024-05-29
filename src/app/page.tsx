@@ -1,3 +1,4 @@
+import ReactTyped from "@/components/TypeWritterAnimation";
 import Image from "next/image";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
             </code>
           </li>
           <li>Save and see your changes instantly.</li>
+          <li><ReactTyped strings={["Sample One", "Text Dummy Two", "Text Dummy Three"]} loop typeSpeed={50} backSpeed={30} className="font-rowdies text-2xl" showCursor={false} /><span className="font-rowdies text-2xl inline ml-2">|</span></li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
