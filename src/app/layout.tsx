@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import ThemeProvider from "@/components/providers/theme-provider";
+import { cn } from "@/libs/utils";
+import React from "react";
 
 const geistSans = localFont({
   src: "../libs/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
 });
-const geistMono = localFont({
-  src: "../libs/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+const rowdies = localFont({
+  src: "../libs/fonts/Rowdies-Bold.ttf",
+  variable: "--font-rowdies",
 });
 
 export const metadata: Metadata = {
@@ -18,14 +21,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  sideBar
 }: Readonly<{
   children: React.ReactNode;
+  sideBar: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <ThemeProvider className={cn("bg-background text-text min-h-screen grid grid-cols-[1fr_8rem]", geistSans.variable, rowdies.variable)}>
         {children}
-      </body>
+        {sideBar}
+      </ThemeProvider>
     </html>
   );
 }
