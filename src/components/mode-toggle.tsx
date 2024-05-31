@@ -1,7 +1,7 @@
 "use client";
 
 import { FC, useContext } from "react";
-import { ThemeContext } from "./providers/theme-provider";
+import { ThemeContext } from "./Providers/theme-provider";
 import SunIcon from "@/libs/icons/SunIcon";
 import MoonIcon from "@/libs/icons/MoonIcon";
 

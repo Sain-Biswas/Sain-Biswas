@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import ThemeProvider from "@/components/providers/theme-provider";
+import ThemeProvider from "@/components/Providers/theme-provider";
 import { cn } from "@/libs/utils";
 import React from "react";
 
