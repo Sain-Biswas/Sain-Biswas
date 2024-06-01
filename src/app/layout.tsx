@@ -21,14 +21,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  sideBar
+  sideBar,
 }: Readonly<{
   children: React.ReactNode;
   sideBar: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <ThemeProvider className={cn("bg-background text-text min-h-screen grid grid-cols-[1fr_8rem]", geistSans.variable, rowdies.variable)}>
+      <ThemeProvider
+        className={cn(
+          "bg-background text-text min-h-screen w-screen overflow-x-hidden lg:grid lg:grid-cols-[1fr_6rem] xl:grid-cols-[1fr_8rem]",
+          geistSans.variable,
+          rowdies.variable
+        )}
+      >
         {children}
         {sideBar}
       </ThemeProvider>

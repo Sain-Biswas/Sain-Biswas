@@ -43,7 +43,10 @@ const config: Config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
-        }
+        },
+      },
+      backgroundImage: {
+        "base-grad": "linear-gradient(to right, #a855f7, #d946ef, #ec4899)",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],

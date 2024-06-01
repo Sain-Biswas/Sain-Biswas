@@ -3,7 +3,7 @@
 import React, { useMemo, useRef, useEffect } from "react";
 import Typed from "typed.js";
 
-interface ReactTypedProps {
+interface TypeWritterAnimationProps {
     stopped?: boolean;
     startWhenVisible?: boolean;
     style?: React.CSSProperties;
@@ -32,7 +32,7 @@ interface ReactTypedProps {
     contentType?: string;
 }
 
-const ReactTyped: React.FC<ReactTypedProps> = (({ style, className, typedRef, parseRef, stopped, children, startWhenVisible, ...typedOptions }) => {
+const TypeWritterAnimation: React.FC<TypeWritterAnimationProps> = (({ style, className, typedRef, parseRef, stopped, children, startWhenVisible, ...typedOptions }) => {
     const rootElement = useRef<any>(null);
     const shouldUpdateArgs = useMemo(
         () => [
@@ -84,4 +84,4 @@ const ReactTyped: React.FC<ReactTypedProps> = (({ style, className, typedRef, pa
 }
 );
 
-export default ReactTyped;
+export default TypeWritterAnimation;
