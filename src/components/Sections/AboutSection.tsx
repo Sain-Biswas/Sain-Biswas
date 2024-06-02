@@ -16,27 +16,27 @@ export default function AboutSection() {
       </div>
       <div className="font-wenkai sm:text-xl md:text-2xl flex flex-col gap-4 col-start-5 col-end-13 row-start-3 row-end-10">
         <p className="">
-          What's up! I'm{" "}
+          What&aops;s up! I&apos;m{" "}
           <span className="font-rowdies bg-base-grad bg-clip-text text-transparent">
             Sain Biswas
           </span>
           , a 3<sup>rd</sup> at Chandigarh University majoring in Computer
-          Science. I enjoy building things for the web and mobile, and I'm
+          Science. I enjoy building things for the web and mobile, and I&apos;m
           constantly learning new languages and frameworks to push the
-          boundaries of what's possible.
+          boundaries of what&apos;s possible.
         </p>
         <p className="">
           I love the challenge of crafting new and user-friendly web
-          experiences, whether it's a sleek landing page or a complex
-          interactive application. On the mobile side, I'm fascinated by the
-          power of creating apps that can fit in your pocket and completely
+          experiences, whether it&apos;s a sleek landing page or a complex
+          interactive application. On the mobile side, I&apos;m fascinated by
+          the power of creating apps that can fit in your pocket and completely
           transform the way we interact with the world.
         </p>
         <p className="">
-          When I'm not coding, you'll probably find me tinkering with
+          When I&apos;m not coding, you&apos;ll probably find me tinkering with
           open-source projects, participating in hackathons, or brainstorming
           ideas with friends. This hands-on approach keeps my skills sharp and
-          fuels my passion for innovation. I'm always looking for new
+          fuels my passion for innovation. I&apos;m always looking for new
           opportunities to collaborate and bring fresh perspectives to the
           table.
         </p>

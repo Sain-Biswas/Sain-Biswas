@@ -44,6 +44,7 @@ export default function MobileSideBar() {
         <article className="flex flex-col gap-2 p-2">
           {sectionRoutes.map((route) => (
             <Link
+              key={route.key}
               href={route.href}
               className="p-2 flex items-center gap-2 font-rowdies hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white rounded-lg"
             >
