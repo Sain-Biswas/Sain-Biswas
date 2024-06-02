@@ -1,23 +1,25 @@
-import css from "./skills/css.png";
-import django from "./skills/django.webp";
-import express from "./skills/express.webp";
-import git from "./skills/git.png";
-import html from "./skills/html.png";
-import java from "./skills/java.png";
-import js from "./skills/js.png";
-import linux from "./skills/linux.png";
-import mongodb from "./skills/mongodb.webp";
-import mysql from "./skills/mysql.png";
-import nextjs from "./skills/nextjs.svg";
-import nodejs from "./skills/nodejs.png";
-import python from "./skills/python.png";
-import react from "./skills/react.png";
-import tailwind from "./skills/tailwind.svg";
-import ts from "./skills/typescript.png";
-import cpp from "./skills/cpp.png";
-import kotlin from "./skills/kotlin.svg";
-import android from "./skills/android.svg";
-import astro from "./skills/astro.svg";
+import { StaticImageData } from "next/dist/shared/lib/get-img-props";
+
+import css from "./skill/css.png";
+import django from "./skill/django.webp";
+import express from "./skill/express.webp";
+import git from "./skill/git.png";
+import html from "./skill/html.png";
+import java from "./skill/java.png";
+import js from "./skill/js.png";
+import linux from "./skill/linux.png";
+import mongodb from "./skill/mongodb.webp";
+import mysql from "./skill/mysql.png";
+import nextjs from "./skill/nextjs.svg";
+import nodejs from "./skill/nodejs.png";
+import python from "./skill/python.png";
+import react from "./skill/react.png";
+import tailwind from "./skill/tailwind.svg";
+import ts from "./skill/typescript.png";
+import cpp from "./skill/cpp.png";
+import kotlin from "./skill/kotlin.svg";
+import android from "./skill/android.svg";
+import astro from "./skill/astro.svg";
 import bun from "./skill/Bun.svg";
 import elysia from "./skill/elysia.svg";
 import hono from "./skill/hono.svg";
@@ -25,7 +27,7 @@ import shadCN from "./skill/shadcn-ui.svg";
 
 export interface SkillList {
   title: string;
-  logo: any;
+  logo: StaticImageData;
 }
 
 const skillList: SkillList[] = [
@@ -36,22 +38,22 @@ const skillList: SkillList[] = [
   { title: "Git", logo: git },
   { title: "Node JS", logo: nodejs },
   { title: "MySQL", logo: mysql },
-  { title: "MongoDB", logo: mongodb },
-  { title: "Tailwind CSS", logo: tailwind },
+  { title: "Mongo DB", logo: mongodb },
+  { title: "Tail wind CSS", logo: tailwind },
   { title: "Python", logo: python },
   { title: "Linux", logo: linux },
   { title: "Java", logo: java },
   { title: "HTML", logo: html },
   { title: "CSS", logo: css },
-  { title: "JavaScript", logo: js },
-  { title: "TypeScript", logo: ts },
+  { title: "Java Script", logo: js },
+  { title: "Type Script", logo: ts },
   { title: "C++", logo: cpp },
   { title: "Kotlin", logo: kotlin },
   { title: "Android", logo: android },
   { title: "Astro", logo: astro },
-  { title: "BunJS", logo: bun },
-  { title: "ElysiaJS", logo: elysia },
-  { title: "HonoJS", logo: hono },
+  { title: "Bun JS", logo: bun },
+  { title: "Elysia JS", logo: elysia },
+  { title: "Hono JS", logo: hono },
   { title: "Shad CN", logo: shadCN },
 ];
 
