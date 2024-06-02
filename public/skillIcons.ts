@@ -18,6 +18,10 @@ import cpp from "./skills/cpp.png";
 import kotlin from "./skills/kotlin.svg";
 import android from "./skills/android.svg";
 import astro from "./skills/astro.svg";
+import bun from "./skill/Bun.svg";
+import elysia from "./skill/elysia.svg";
+import hono from "./skill/hono.svg";
+import shadCN from "./skill/shadcn-ui.svg";
 
 export interface SkillList {
   title: string;
@@ -45,6 +49,10 @@ const skillList: SkillList[] = [
   { title: "Kotlin", logo: kotlin },
   { title: "Android", logo: android },
   { title: "Astro", logo: astro },
+  { title: "BunJS", logo: bun },
+  { title: "ElysiaJS", logo: elysia },
+  { title: "HonoJS", logo: hono },
+  { title: "Shad CN", logo: shadCN },
 ];
 
 export default skillList;
