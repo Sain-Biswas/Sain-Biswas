@@ -49,8 +49,10 @@ const config: Config = {
         "base-grad": "linear-gradient(to right, #a855f7, #d946ef, #ec4899)",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)"],
         rowdies: ["var(--font-rowdies)"],
+        roboto: ["var(--font-roboto)"],
+        kobe: ["var(--font-kobe)"],
+        wenkai: ["var(--font-wenkai)"],
       },
     },
   },

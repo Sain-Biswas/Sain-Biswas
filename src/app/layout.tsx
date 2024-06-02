@@ -5,13 +5,21 @@ import ThemeProvider from "@/components/Providers/theme-provider";
 import { cn } from "@/libs/utils";
 import React from "react";
 
-const geistSans = localFont({
-  src: "../libs/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-});
 const rowdies = localFont({
   src: "../libs/fonts/Rowdies-Bold.ttf",
   variable: "--font-rowdies",
+});
+const roboto = localFont({
+  src: "../libs/fonts/Roboto.ttf",
+  variable: "--font-roboto",
+});
+const kobe = localFont({
+  src: "../libs/fonts/kobe.otf",
+  variable: "--font-kobe",
+});
+const wenkaitc = localFont({
+  src: "../libs/fonts/WenKaiTC.ttf",
+  variable: "--font-wenkai",
 });
 
 export const metadata: Metadata = {
@@ -31,8 +39,10 @@ export default function RootLayout({
       <ThemeProvider
         className={cn(
           "bg-background text-text min-h-screen w-screen overflow-x-hidden lg:grid lg:grid-cols-[1fr_6rem] xl:grid-cols-[1fr_8rem]",
-          geistSans.variable,
-          rowdies.variable
+          rowdies.variable,
+          roboto.variable,
+          kobe.variable,
+          wenkaitc.variable
         )}
       >
         {children}
