@@ -22,7 +22,7 @@ export default function MobileSideBar() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="lg:hidden p-2 rounded-full border-border border-2 absolute top-3 right-3 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white"
+        className="lg:hidden p-2 rounded-full bg-background border-border border-2 absolute top-3 right-3 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white"
       >
         <MenuIcon className="h-5 w-5" />
       </button>
