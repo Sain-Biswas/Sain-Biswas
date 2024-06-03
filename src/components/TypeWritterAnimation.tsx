@@ -84,9 +84,7 @@ const TypeWritterAnimation: React.FC<TypeWritterAnimationProps> = ({
   const child = !children ? (
     <span style={style} className={className} ref={rootElement} />
   ) : (
-    React.cloneElement(children, {
-      ref: rootElement,
-    })
+    React.cloneElement(children, { ref: rootElement })
   );
   return child;
 };
