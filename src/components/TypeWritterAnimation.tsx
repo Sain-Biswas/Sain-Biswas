@@ -19,6 +19,7 @@ export default function TypeWritterAnimation({
       strings: strings,
       typeSpeed: 50,
       backSpeed: 30,
+      loop: true,
     });
 
     return () => {
