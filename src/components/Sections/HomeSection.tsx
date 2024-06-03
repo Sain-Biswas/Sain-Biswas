@@ -25,9 +25,6 @@ export default function HomeSection() {
         <h1 className="text-center font-rowdies text-3xl sm:text-5xl md:text-7xl lg:h-36">
           <TypeWritterAnimation
             strings={["Web Developer", "Android Developer", "Student"]}
-            loop
-            typeSpeed={40}
-            backSpeed={20}
             className="bg-base-grad bg-clip-text text-transparent"
           />
         </h1>
