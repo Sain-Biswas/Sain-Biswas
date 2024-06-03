@@ -49,11 +49,11 @@ const TypeWritterAnimation: React.FC<TypeWritterAnimationProps> = ({
         (v) =>
           typeof v === "boolean" ||
           typeof v === "number" ||
-          typeof v === "string"
+          typeof v === "string",
       ),
       typedOptions.strings?.join(","),
     ],
-    [typedOptions]
+    [typedOptions],
   );
   useEffect(() => {
     const element = (parseRef && parseRef(rootElement)) || rootElement.current;

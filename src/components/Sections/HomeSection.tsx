@@ -13,16 +13,16 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="h-screen grid grid-rows-2 lg:grid-cols-12 lg:grid-rows-12"
+      className="grid h-screen grid-rows-2 lg:grid-cols-12 lg:grid-rows-12"
     >
       <div className="flex flex-col items-center justify-center lg:col-start-1 lg:col-end-9 lg:row-start-4 lg:row-end-10">
         <h4 className="font-wenkai text-2xl sm:text-3xl md:text-5xl">
           Hello <span className="hover:scale-110">&#128075;</span>, I&apos;m
         </h4>
-        <h1 className="font-rowdies text-3xl sm:text-5xl md:text-7xl bg-base-grad bg-clip-text text-transparent">
+        <h1 className="bg-base-grad bg-clip-text font-rowdies text-3xl text-transparent sm:text-5xl md:text-7xl">
           Sain Biswas
         </h1>
-        <h1 className="font-rowdies text-3xl sm:text-5xl md:text-7xl lg:h-36 text-center">
+        <h1 className="text-center font-rowdies text-3xl sm:text-5xl md:text-7xl lg:h-36">
           <TypeWritterAnimation
             strings={["Web Developer", "Android Developer", "Student"]}
             loop
@@ -31,42 +31,42 @@ export default function HomeSection() {
             className="bg-base-grad bg-clip-text text-transparent"
           />
         </h1>
-        <p className="font-wenkai px-5 text-center sm:text-xl md:text-2xl">
+        <h6 className="px-5 text-center font-wenkai sm:text-xl md:text-2xl">
           Developing what the heart desires, for the future and for fun.
-        </p>
-        <div className="mt-5 md:text-lg font-wenkai flex gap-5">
+        </h6>
+        <div className="mt-5 flex gap-5 font-wenkai md:text-lg">
           <Link
             href="/#projects"
-            className="px-6 py-2 hover:scale-110 border-border border-2 transition-all rounded-lg hover:rounded-l-full hover:rounded-r-full hover:bg-base-grad hover:text-white"
+            className="rounded-lg border-2 border-border px-6 py-2 transition-all hover:scale-110 hover:rounded-l-full hover:rounded-r-full hover:bg-base-grad hover:text-white"
           >
             View Projects
           </Link>
           <a
-            href={process.env.RESUME_URL}
-            className="px-6 py-2 hover:scale-110 flex gap-3 items-center border-border border-2 transition-all rounded-lg hover:rounded-l-full hover:rounded-r-full hover:bg-base-grad hover:text-white"
+            href={process.env.RESUME_URL as string}
+            className="flex items-center gap-3 rounded-lg border-2 border-border px-6 py-2 transition-all hover:scale-110 hover:rounded-l-full hover:rounded-r-full hover:bg-base-grad hover:text-white"
             download
           >
             <DownloadIcon className="h-5 w-5" />
-            <p>Resume</p>
+            <h6>Resume</h6>
           </a>
         </div>
       </div>
-      <div className="relative lg:row-start-4 lg:col-start-9 lg:row-end-10 lg:col-end-13">
+      <div className="relative lg:col-start-9 lg:col-end-13 lg:row-start-4 lg:row-end-10">
         <Image
           src={personImage}
           alt=""
           draggable={false}
           fill
-          className="object-contain rounded-full"
+          className="rounded-full object-contain"
         />
-        <div className="-z-20 absolute w-3/4 md:w-1/2 lg:w-3/4 h-3/4 right-20 rounded-full bg-accent top-10 text-transparent">
+        <div className="absolute right-20 top-10 -z-20 h-3/4 w-3/4 rounded-full bg-accent text-transparent md:w-1/2 lg:w-3/4">
           .
         </div>
       </div>
-      <div className="relative hidden lg:flex h-24 w-24 col-start-11 row-start-2 font-bold bg-blue-500 text-white rounded-full justify-center items-center text-6xl">
+      <div className="relative col-start-11 row-start-2 hidden h-24 w-24 items-center justify-center rounded-full bg-blue-500 text-6xl font-bold text-white lg:flex">
         TS
       </div>
-      <div className="relative hidden lg:block h-24 w-24 col-start-8 row-start-3">
+      <div className="relative col-start-8 row-start-3 hidden h-24 w-24 lg:block">
         <Image
           src={reactIcon}
           alt=""
@@ -75,7 +75,7 @@ export default function HomeSection() {
           className="object-contain"
         />
       </div>
-      <div className="relative hidden lg:block h-24 w-24 col-start-8 row-start-10">
+      <div className="relative col-start-8 row-start-10 hidden h-24 w-24 lg:block">
         <Image
           src={elysiaIcon}
           alt=""
@@ -84,7 +84,7 @@ export default function HomeSection() {
           className="object-contain"
         />
       </div>
-      <div className="relative hidden lg:block h-24 w-24 col-start-11 row-start-11">
+      <div className="relative col-start-11 row-start-11 hidden h-24 w-24 lg:block">
         <Image
           src={nextjsIcon}
           alt=""

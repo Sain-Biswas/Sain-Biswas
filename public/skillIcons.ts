@@ -23,7 +23,7 @@ import astro from "./skill/astro.svg";
 import bun from "./skill/Bun.svg";
 import elysia from "./skill/elysia.svg";
 import hono from "./skill/hono.svg";
-import shadCN from "./skill/shadcn-ui.svg";
+import prisma from "./skill/prisma.svg";
 
 export interface SkillList {
   title: string;
@@ -54,7 +54,7 @@ const skillList: SkillList[] = [
   { title: "Bun JS", logo: bun },
   { title: "Elysia JS", logo: elysia },
   { title: "Hono JS", logo: hono },
-  { title: "Shad CN", logo: shadCN },
+  { title: "Prisma", logo: prisma },
 ];
 
 export default skillList;

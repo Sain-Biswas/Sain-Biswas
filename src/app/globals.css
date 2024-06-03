@@ -56,8 +56,55 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-
   .no-scrollbar::-webkit-scrollbar {
     display: none;
+  }
+
+  p {
+    animation: text-in linear;
+    animation-timeline: view(85vh 5px);
+  }
+
+  h1,
+  label,
+  input {
+    animation: heading-in linear;
+    animation-timeline: view(80vh 10px);
+  }
+
+  .skill-animation {
+    animation: grid-child-in linear;
+    animation-timeline: view(85vh 5px);
+  }
+
+  @keyframes grid-child-in {
+    from {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes heading-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes text-in {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 }

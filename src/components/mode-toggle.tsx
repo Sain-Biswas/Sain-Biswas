@@ -14,8 +14,8 @@ const ModeToggle: FC<ModeToggleProps> = ({ className }) => {
 
   return (
     <button onClick={toggleMode} className={className}>
-      <SunIcon className="dark:hidden h-6 w-6" />
-      <MoonIcon className="hidden dark:block h-6 w-6" />
+      <SunIcon className="h-6 w-6 dark:hidden" />
+      <MoonIcon className="hidden h-6 w-6 dark:block" />
     </button>
   );
 };

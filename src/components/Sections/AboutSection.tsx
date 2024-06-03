@@ -7,17 +7,15 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="md:min-h-screen lg:h-screen flex flex-col gap-5 p-5 pt-16 justify-between lg:grid lg:grid-cols-12 lg:grid-rows-12"
+      className="flex flex-col justify-between gap-5 p-5 pt-16 md:min-h-screen lg:grid lg:h-screen lg:grid-cols-12 lg:grid-rows-12"
     >
-      <div className="font-rowdies text-3xl sm:text-5xl md:text-7xl text-right col-start-1 col-end-13 row-start-1 row-end-3">
-        <span className="bg-base-grad bg-clip-text text-transparent">
-          About Us
-        </span>
+      <div className="col-start-1 col-end-13 row-start-1 row-end-3 text-right font-rowdies text-3xl sm:text-5xl md:text-7xl">
+        <h1 className="bg-base-grad bg-clip-text text-transparent">About Me</h1>
       </div>
-      <div className="font-wenkai sm:text-xl md:text-2xl flex flex-col gap-4 col-start-5 col-end-13 row-start-3 row-end-10">
+      <div className="col-start-5 col-end-13 row-start-3 row-end-10 flex flex-col gap-4 font-wenkai sm:text-xl md:text-2xl">
         <p className="">
-          What&aops;s up! I&apos;m{" "}
-          <span className="font-rowdies bg-base-grad bg-clip-text text-transparent">
+          What&apos;s up! I&apos;m{" "}
+          <span className="bg-base-grad bg-clip-text font-rowdies text-transparent">
             Sain Biswas
           </span>
           , a 3<sup>rd</sup> at Chandigarh University majoring in Computer
@@ -52,7 +50,7 @@ export default function AboutSection() {
           />
         </div>
       </div>
-      <div className="hidden lg:block relative col-start-2 col-end-4 row-start-2 row-end-4">
+      <div className="relative col-start-2 col-end-4 row-start-2 row-end-4 hidden lg:block">
         <Image
           src={indiaImage}
           alt=""

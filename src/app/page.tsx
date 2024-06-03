@@ -7,7 +7,7 @@ import SkillsSection from "@/components/Sections/SkillsSection";
 
 export default function Home() {
   return (
-    <main className="h-screen overflow-y-scroll scroll-smooth no-scrollbar">
+    <main className="no-scrollbar h-screen overflow-y-scroll scroll-smooth">
       <HomeSection />
       <AboutSection />
       <SkillsSection />

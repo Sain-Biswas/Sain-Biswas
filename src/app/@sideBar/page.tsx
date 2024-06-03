@@ -9,41 +9,42 @@ import ResumeIcon from "@/libs/icons/ResumeIcon";
 import SkillsIcon from "@/libs/icons/SkillsIcon";
 import Link from "next/link";
 import MobileSideBar from "./MobileSideBar";
+import { JSX } from "react";
 
 export default function Page() {
   return (
     <>
-      <aside className="hidden h-screen m-auto lg:py-6 lg:flex md:flex-col items-center justify-between">
+      <aside className="m-auto hidden h-screen items-center justify-between md:flex-col lg:flex lg:py-6">
         <div className="flex flex-col items-center">
           <div className="mb-4 text-center">
-            <p className="font-rowdies text-2xl bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <p className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text font-rowdies text-2xl text-transparent">
               _SB
             </p>
-            <p className="text-xs font-rowdies">Sain Biswas</p>
+            <p className="font-rowdies text-xs">Sain Biswas</p>
           </div>
-          <ModeToggle className="p-2 md:p-4 border-border border-2 rounded-full hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white" />
+          <ModeToggle className="rounded-full border-2 border-border from-purple-500 to-pink-500 p-2 hover:bg-gradient-to-r hover:text-white md:p-4" />
         </div>
-        <div className="px-3 py-2  md:px-4 md:py-6 border-border border-2 rounded-t-full rounded-b-full flex md:flex-col gap-2 md:gap-4">
+        <div className="flex gap-2 rounded-b-full rounded-t-full border-2 border-border px-3 py-2 md:flex-col md:gap-4 md:px-4 md:py-6">
           {sectionRoutes.map((route) => (
-            <article key={route.key} className="group relative p-1 w-8 h-8">
+            <article key={route.key} className="group relative h-8 w-8 p-1">
               <Link href={route.href}>
                 <route.icon className="h-6 w-6" />
               </Link>
-              <div className="invisible group-hover:visible bg-background right-[110%] -top-1 border-border border-2 absolute px-3 py-1 rounded-md">
-                <p className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent font-rowdies">
+              <div className="invisible absolute -top-1 right-[110%] rounded-md border-2 border-border bg-background px-3 py-1 group-hover:visible">
+                <p className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text font-rowdies text-transparent">
                   {route.name}
                 </p>
               </div>
             </article>
           ))}
         </div>
-        <div className="flex md:flex-col gap-2 md:gap-4">
-          <button className="p-3 border-border border-2 rounded-full hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white">
+        <div className="flex gap-2 md:flex-col md:gap-4">
+          <button className="rounded-full border-2 border-border from-purple-500 to-pink-500 p-3 hover:bg-gradient-to-r hover:text-white">
             <a href="https://github.com/Sain-Biswas" target="_blank">
               <GitHubIcon className="h-4 w-4 md:h-8 md:w-8" />
             </a>
           </button>
-          <button className="p-2 md:p-4 border-border border-2 rounded-full hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white">
+          <button className="rounded-full border-2 border-border from-purple-500 to-pink-500 p-2 hover:bg-gradient-to-r hover:text-white md:p-4">
             <a href="https://www.linkedin.com/in/sainbiswas/" target="_blank">
               <LinkedInIcon className="h-5 w-5 md:h-6 md:w-6" />
             </a>

@@ -10,34 +10,34 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="min-h-screen p-5 pt-12 lg:grid grid-cols-12 grid-rows-12"
+      className="min-h-screen grid-cols-12 grid-rows-12 p-5 pt-12 lg:grid"
     >
-      <div className="font-rowdies text-3xl sm:text-5xl md:text-7xl mb-5 col-start-1 col-end-13 row-start-1 row-end-3">
-        <span className="bg-base-grad bg-clip-text text-transparent">
+      <div className="col-start-1 col-end-13 row-start-1 row-end-3 mb-5 font-rowdies text-3xl sm:text-5xl md:text-7xl">
+        <h1 className="inline bg-base-grad bg-clip-text text-transparent">
           My Skills
-        </span>
+        </h1>
       </div>
-      <div className="font-wenkai sm:text-lg md:text-xl p-4 gap-4 col-start-1 col-end-11 xl:col-end-10 row-start-3 row-end-11 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+      <div className="col-start-1 col-end-11 row-start-3 row-end-11 grid grid-cols-2 gap-4 p-4 font-wenkai sm:grid-cols-3 sm:text-lg md:grid-cols-4 md:text-xl lg:grid-cols-6 xl:col-end-10">
         {skillList.map((skill) => (
           <SkillCard key={skill.title} title={skill.title} logo={skill.logo} />
         ))}
       </div>
-      <div className="relative lg:w-full lg:h-full col-start-10 col-end-13 row-start-9 row-end-13">
+      <div className="relative col-start-10 col-end-13 row-start-9 row-end-13 lg:h-full lg:w-full">
         <Image
           src={skillImage}
           alt=""
           draggable={false}
           fill
-          className="object-contain -z-10"
+          className="-z-10 object-contain"
         />
       </div>
-      <div className="hidden lg:block relative p-2 col-start-10 col-end-13 row-start-1 row-end-5">
+      <div className="relative col-start-10 col-end-13 row-start-1 row-end-5 hidden p-2 lg:block">
         <Image
           src={codingImage}
           alt=""
           draggable={false}
           fill
-          className="object-contain -scale-x-100"
+          className="-scale-x-100 object-contain"
         />
       </div>
     </section>
@@ -51,14 +51,14 @@ interface SkillCardProps {
 
 const SkillCard: FC<SkillCardProps> = ({ title, logo }) => {
   return (
-    <article className="flex gap-2 flex-col items-center justify-center text-center p-2 hover:scale-110">
-      <div className="relative h-10 w-10 bg-accent rounded-full">
+    <article className="skill-animation flex flex-col items-center justify-center gap-2 p-2 text-center hover:scale-110">
+      <div className="relative h-10 w-10 rounded-full bg-accent">
         <Image
           src={logo}
           alt=""
           draggable={false}
           fill
-          className="object-contain rounded-md"
+          className="rounded-md object-contain"
         />
       </div>
       <div className="">{title}</div>

@@ -38,11 +38,11 @@ export default function RootLayout({
     <html lang="en">
       <ThemeProvider
         className={cn(
-          "bg-background text-text min-h-screen w-screen overflow-x-hidden lg:grid lg:grid-cols-[1fr_6rem] xl:grid-cols-[1fr_8rem]",
+          "min-h-screen w-screen overflow-x-hidden bg-background text-text lg:grid lg:grid-cols-[1fr_6rem] xl:grid-cols-[1fr_8rem]",
           rowdies.variable,
           roboto.variable,
           kobe.variable,
-          wenkaitc.variable
+          wenkaitc.variable,
         )}
       >
         {children}

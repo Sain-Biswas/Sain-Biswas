@@ -13,7 +13,7 @@ import ResumeIcon from "@/libs/icons/ResumeIcon";
 import SkillsIcon from "@/libs/icons/SkillsIcon";
 import { cn } from "@/libs/utils";
 import Link from "next/link";
-import { memo, useState } from "react";
+import { JSX, memo, useState } from "react";
 
 export default function MobileSideBar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -22,23 +22,23 @@ export default function MobileSideBar() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="lg:hidden p-2 rounded-full bg-background border-border border-2 absolute top-3 right-3 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white"
+        className="absolute right-3 top-3 rounded-full border-2 border-border bg-background from-purple-500 to-pink-500 p-2 hover:bg-gradient-to-r hover:text-white lg:hidden"
       >
         <MenuIcon className="h-5 w-5" />
       </button>
       <aside
         className={cn(
-          "lg:hidden absolute top-0 right-0 w-64 h-screen flex flex-col justify-between py-5 bg-accent z-50 transition-all",
-          isOpen ? "" : "translate-x-64"
+          "absolute right-0 top-0 z-50 flex h-screen w-64 flex-col justify-between bg-accent py-5 transition-all lg:hidden",
+          isOpen ? "" : "translate-x-64",
         )}
       >
         <article className="flex justify-end gap-3 pr-5">
-          <ModeToggle className="border-accent-foreground rounded-full border-2 p-2 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white hover:border-white" />
+          <ModeToggle className="rounded-full border-2 border-accent-foreground from-purple-500 to-pink-500 p-2 hover:border-white hover:bg-gradient-to-r hover:text-white" />
           <button
             onClick={() => setIsOpen(false)}
-            className="p-3 rounded-full border-accent-foreground border-2 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white hover:border-white"
+            className="rounded-full border-2 border-accent-foreground from-purple-500 to-pink-500 p-3 hover:border-white hover:bg-gradient-to-r hover:text-white"
           >
-            <CrossIcon className="w-4 h-4" />
+            <CrossIcon className="h-4 w-4" />
           </button>
         </article>
         <article className="flex flex-col gap-2 p-2">
@@ -46,28 +46,28 @@ export default function MobileSideBar() {
             <Link
               key={route.key}
               href={route.href}
-              className="p-2 flex items-center gap-2 font-rowdies hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white rounded-lg"
+              className="flex items-center gap-2 rounded-lg from-purple-500 to-pink-500 p-2 font-rowdies hover:bg-gradient-to-r hover:text-white"
             >
-              <route.icon className="w-6 h-6 font-thin" />
+              <route.icon className="h-6 w-6 font-thin" />
               <p>{route.name}</p>
             </Link>
           ))}
         </article>
-        <article className="grid p-2 gap-2 font-rowdies">
+        <article className="grid gap-2 p-2 font-rowdies">
           <a
             href="https://github.com/Sain-Biswas"
             target="_blank"
-            className="flex gap-2 justify-center border-accent-foreground border-2 p-2 rounded-lg hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white"
+            className="flex justify-center gap-2 rounded-lg border-2 border-accent-foreground from-purple-500 to-pink-500 p-2 hover:bg-gradient-to-r hover:text-white"
           >
-            <GitHubIcon className="w-6 h-6" />
+            <GitHubIcon className="h-6 w-6" />
             <p>Github</p>
           </a>
           <a
             href="https://www.linkedin.com/in/sainbiswas/"
             target="_blank"
-            className="flex gap-2 justify-center border-accent-foreground border-2 p-2 rounded-lg hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white"
+            className="flex justify-center gap-2 rounded-lg border-2 border-accent-foreground from-purple-500 to-pink-500 p-2 hover:bg-gradient-to-r hover:text-white"
           >
-            <LinkedInIcon className="w-6 h-6" />
+            <LinkedInIcon className="h-6 w-6" />
             <p>Linked In</p>
           </a>
         </article>
