@@ -1,3 +1,3 @@
 # Sain Biswas
 
-Pre final year computer science student
+Pre final year computer science student.
