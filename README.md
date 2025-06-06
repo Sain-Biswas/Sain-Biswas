@@ -42,6 +42,7 @@ Passionate about building modern, performant web applications. Currently masteri
 - Performance optimization in Next.js
 - Bun runtime ecosystem
 - Database optimization techniques
+- Learn more about Data Structures and Algorithms
 
 ## 📈 GitHub Stats
 
@@ -57,14 +58,6 @@ Passionate about building modern, performant web applications. Currently masteri
 - Portfolio: [sainbiswas.vercel.app](https://sainbiswas.vercel.app/)
 - Email: sain.biswas614@gmail.com
 
-## ⚡ Fun Fact
-
-I can solve a Rubik's cube while debugging React hooks! 🎲🔧
-
 ---
 
 ⭐️ From Sain Biswas ([@Sain-Biswas](https://github.com/Sain-Biswas)), a tech enthusiast building the future of the web!
-
-```
-
-```
